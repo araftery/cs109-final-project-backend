@@ -50,6 +50,8 @@ class HeatMap(JSONResponseMixin, View):
             'rusher_ypc': rusher_ypc,
             'defense_pass_ranking': defense_pass_ranking,
             'defense_rush_ranking': defense_rush_ranking,
+            'defense_pass_ya': defense_passing_ya,
+            'defense_rush_ya': defense_rushing_ya,
             'prob_pass': zip(grid, probs),
         }
 
