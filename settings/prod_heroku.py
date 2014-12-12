@@ -11,7 +11,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ##### OTHER ################################################
 ############################################################
 
-DEBUG = False
-TEMPLATE_DEBUG = False
+DEBUG = True
+TEMPLATE_DEBUG = True
 
 SETTINGS_MODULE = 'settings.prod_heroku'
