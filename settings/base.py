@@ -31,6 +31,7 @@ MY_APPS = (
 )
 
 THIRD_PARTY_APPS = (
+    'corsheaders',
 )
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + MY_APPS
@@ -41,6 +42,7 @@ INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + MY_APPS
 
 DEFAULT_MIDDLEWARE = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -117,3 +119,5 @@ BUGSNAG = {
   "api_key": os.environ.get('BUGSNAG_API_KEY'),
   "project_root": "/app",
 }
+
+CORS_ORIGIN_ALLOW_ALL = True
